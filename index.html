@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+<script>
+  fetch('headContent.html')
+    .then(res => res.text())
+    .then(html => document.head.insertAdjacentHTML('beforeend', html));
+</script>
+  </head>
+  <body>
+    <div id="root" class="home homepage"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+
+</html>
